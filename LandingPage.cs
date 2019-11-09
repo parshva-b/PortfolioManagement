@@ -95,5 +95,10 @@ namespace PortfolioManagement
             alertMsg.ForeColor = color;
             alertMsg.BorderStyle = BorderStyle.FixedSingle;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = api.getValue(textBox1.Text);
+        }
     }
 }

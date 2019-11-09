@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.showHide = new System.Windows.Forms.CheckBox();
             this.login = new System.Windows.Forms.Button();
             this.pwd = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
@@ -36,8 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.register = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.showHide = new System.Windows.Forms.CheckBox();
             this.alertMsg = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +57,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login Credentials:";
+            // 
+            // showHide
+            // 
+            this.showHide.AutoSize = true;
+            this.showHide.Location = new System.Drawing.Point(304, 95);
+            this.showHide.Name = "showHide";
+            this.showHide.Size = new System.Drawing.Size(45, 17);
+            this.showHide.TabIndex = 5;
+            this.showHide.Text = "See";
+            this.showHide.UseVisualStyleBackColor = true;
+            this.showHide.CheckedChanged += new System.EventHandler(this.showHide_CheckedChanged);
             // 
             // login
             // 
@@ -117,17 +130,6 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Click here to register as new user";
             // 
-            // showHide
-            // 
-            this.showHide.AutoSize = true;
-            this.showHide.Location = new System.Drawing.Point(304, 95);
-            this.showHide.Name = "showHide";
-            this.showHide.Size = new System.Drawing.Size(45, 17);
-            this.showHide.TabIndex = 5;
-            this.showHide.Text = "See";
-            this.showHide.UseVisualStyleBackColor = true;
-            this.showHide.CheckedChanged += new System.EventHandler(this.showHide_CheckedChanged);
-            // 
             // alertMsg
             // 
             this.alertMsg.AutoSize = true;
@@ -137,11 +139,30 @@
             this.alertMsg.TabIndex = 3;
             this.alertMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(62, 143);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Show";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(62, 114);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 5;
+            // 
             // LandingPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.alertMsg);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.register);
@@ -167,6 +188,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox showHide;
         private System.Windows.Forms.Label alertMsg;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
