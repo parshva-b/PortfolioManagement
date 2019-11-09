@@ -9,3 +9,4 @@ C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\Portf
 C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.LandingPage.resources
 C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\bin\Debug\Database.mdf
 C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\bin\Debug\Database_log.ldf
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.Register.resources
