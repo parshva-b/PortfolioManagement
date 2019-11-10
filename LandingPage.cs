@@ -100,5 +100,12 @@ namespace PortfolioManagement
         {
             textBox1.Text = api.getValue(textBox1.Text);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Stockwindow sw = new Stockwindow();
+            sw.Show();
+        }
     }
 }

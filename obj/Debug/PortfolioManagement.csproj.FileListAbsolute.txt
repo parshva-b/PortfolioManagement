@@ -22,3 +22,16 @@ C:\Users\shivam_1708\Desktop\PortfolioManagement\obj\Debug\PortfolioManagement.R
 C:\Users\shivam_1708\Desktop\PortfolioManagement\obj\Debug\PortfolioManagement.csproj.GenerateResource.cache
 C:\Users\shivam_1708\Desktop\PortfolioManagement\obj\Debug\PortfolioManagement.exe
 C:\Users\shivam_1708\Desktop\PortfolioManagement\obj\Debug\PortfolioManagement.pdb
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.csprojAssemblyReference.cache
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.LandingPage.resources
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.Properties.Resources.resources
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.Register.resources
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.csproj.GenerateResource.cache
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.exe
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.pdb
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\Database.mdf
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\Database_log.ldf
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\PortfolioManagement.exe.config
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\PortfolioManagement.exe
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\PortfolioManagement.pdb
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.Stockwindow.resources
