@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,41 +25,30 @@ namespace PortfolioManagement
         private void addBtn_Click(object sender, EventArgs e)
         {
             string mail = email.Text, password = pwd.Text, conPassword = cPwd.Text;
-            if (!password.Equals(conPassword)) setMsg("Error: Passwords do no match", Color.Red);
+            if (!isValidEmail(mail)) setMsg("Email not in proper format", Color.Red);
             else
             {
-                if ( ( mail.Length == 0 || password.Length == 0 ) && password.Length < 6 ) setMsg("Error: All fields are required", Color.Red);
+                if (!password.Equals(conPassword)) setMsg("Error: Passwords do no match", Color.Red);
                 else
                 {
-                    var connection = new DataClasses1DataContext();
-                    var checkForMail = connection.Users.Where(u => u.email.Equals(mail)).Count();
-                    if( checkForMail == 0 )
-                    {
-                        User newUser = new User()
-                        {
-                            email = mail,
-                            password = password
-                        };
-                        MessageBox.Show(newUser.ToString());
-                        connection.Users.InsertOnSubmit(newUser);
-                        try
-                        {
-                            connection.SubmitChanges();
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.ToString());
-                        }
-                        connection.Dispose();
-                        setMsg("Info: New User Entered", Color.Green);
-                        this.Hide();
-                        (new LandingPage()).Show();
-                    }
+                    if ((mail.Length == 0 || password.Length == 0) && password.Length < 6) setMsg("Error: All fields are required", Color.Red);
                     else
                     {
-                        setMsg("Error: User already exists", Color.Red);
+                        bool checkForMail = database.checkEmailExists(mail);
+                        if (!checkForMail)
+                        {
+                            int change = database.addUser(mail, password);
+                            if (change == 0) setMsg("Server internal Error: Try again", Color.Red);
+                            else
+                            {
+                                setMsg("Info: New User Entered", Color.Green);
+                                this.Hide();
+                                (new LandingPage()).Show();
+                            }
+                        }
+                        else setMsg("Error: User already exists", Color.Red);
+                        //MessageBox.Show(checkForMail.ToString());
                     }
-                    //MessageBox.Show(checkForMail.ToString());
                 }
             }
         }
@@ -83,6 +73,16 @@ namespace PortfolioManagement
                 pwdStatus.Text = "Passwords do not match";
                 pwdStatus.ForeColor = Color.Red;
             }
+        }
+
+        private bool isValidEmail(string email)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(email);
+                return true;
+            }
+            catch (FormatException) { return false; }
         }
     }
 }

@@ -7,8 +7,6 @@ C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\Portf
 C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.exe
 C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.pdb
 C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.LandingPage.resources
-C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\bin\Debug\Database.mdf
-C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\bin\Debug\Database_log.ldf
 C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.Register.resources
 C:\Users\shivam_1708\Desktop\PortfolioManagement\bin\Debug\Database.mdf
 C:\Users\shivam_1708\Desktop\PortfolioManagement\bin\Debug\Database_log.ldf
@@ -35,3 +33,10 @@ C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\PortfolioManagement.
 C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\PortfolioManagement.exe
 C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\PortfolioManagement.pdb
 C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.Stockwindow.resources
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.Stockwindow.resources
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\bin\Debug\Renci.SshNet.dll
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\bin\Debug\MySql.Data.xml
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.csproj.CopyComplete

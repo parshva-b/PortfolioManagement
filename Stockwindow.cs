@@ -12,9 +12,10 @@ namespace PortfolioManagement
 {
     public partial class Stockwindow : Form
     {
-        public Stockwindow()
+        public Stockwindow(int uid)
         {
             InitializeComponent();
+            label1.Text = "UserId: " + uid.ToString();
         }
     }
 }

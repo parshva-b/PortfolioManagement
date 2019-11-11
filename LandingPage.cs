@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,32 +38,21 @@ namespace PortfolioManagement
                 }
                 else
                 {
-                    var connection = new DataClasses1DataContext();
-                    var results = connection.Users.Where(u => u.email == mail).Select(u => u.password).ToList();
-                    bool loginState = false;
-                    try
-                    {
-                        loginState = password.Equals(results.ElementAt<string>(0));
-                    }
-                    catch (Exception exp)
-                    {
-                        //MessageBox.Show("Error: User Does not exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        setMsg("Error: User does not exist", Color.Red);
-                    }
-                    if (loginState)
-                    {
-                        //MessageBox.Show("Info: Login Successful", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        setMsg("Info: Login Successful", Color.Green);
-                        var list = connection.Users.Where(u => u.email == mail).Select(u => u.id).ToList();
-                        // access list.ElementAt<int>(0) and pass to stocks
-                        //Show next window
-                    }
+                    string pwd = database.getPwd(mail);
+                    if( string.IsNullOrEmpty(pwd) ) setMsg("Error: User does not exist", Color.Red);
                     else
                     {
-                        //MessageBox.Show("Error: User Credentials do not match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        setMsg("Error: User Credentials do not match", Color.Red);
+                        if (pwd.Length > 0 && pwd.Equals(password))
+                        {
+                            setMsg("Info: Login Successful", Color.Green);
+                            // get userId
+                            int uid = database.getUid(mail);
+                            
+                            this.Hide();
+                            (new Stockwindow(uid)).Show();
+                        }
+                        else setMsg("Error: User Credentials do not match", Color.Red);
                     }
-                    connection.Dispose();
                 }
             }
         }
@@ -99,13 +89,6 @@ namespace PortfolioManagement
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text = api.getValue(textBox1.Text);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Stockwindow sw = new Stockwindow();
-            sw.Show();
         }
     }
 }
