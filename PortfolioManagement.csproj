@@ -66,6 +66,7 @@
     <Compile Include="api.cs" />
     <Compile Include="config.cs" />
     <Compile Include="database.cs" />
+    <Compile Include="email.cs" />
     <Compile Include="LandingPage.cs">
       <SubType>Form</SubType>
     </Compile>
