@@ -19,6 +19,11 @@ namespace PortfolioManagement
                 var final_url = url1 + symbol + url2;
                 var response = httpClient.GetStringAsync(new Uri(final_url)).Result;
                 var index = response.IndexOf("1. open");
+                Debug.WriteLine(final_url);
+                if(index == -1)
+                {
+                    return "Not Found";
+                }
                 int x = index + 11;
                 string str = "";
                 while(response.ElementAt(x) != '"')

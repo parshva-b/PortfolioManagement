@@ -56,3 +56,4 @@ C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\bin\Debug\BouncyCastle.C
 C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\bin\Debug\Renci.SshNet.dll
 C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\bin\Debug\MySql.Data.xml
 C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\obj\Debug\PortfolioManagement.csproj.CopyComplete
+C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\obj\Debug\PortfolioManagement.Buy.resources
