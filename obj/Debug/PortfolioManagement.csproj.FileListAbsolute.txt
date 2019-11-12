@@ -66,3 +66,4 @@ C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.
 >>>>>>> 09491fc4b3367cc7e8226889ae3eac1ee1b8bad7
 C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.Buy.resources
 C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\obj\Debug\PortfolioManagement.Sell.resources
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.Sell.resources

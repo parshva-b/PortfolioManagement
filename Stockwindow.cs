@@ -14,10 +14,12 @@ namespace PortfolioManagement
 {
     public partial class Stockwindow : Form
     {
+        public int userId;
         public Stockwindow(int uid)
         {
             InitializeComponent();
             // label1.Text = "UserId: " + uid.ToString();
+            userId = uid;
             MySqlDataReader dataReader = GetUserInfo(uid.ToString());
             //MessageBox.Show(x.ToString());
             l_email.Text = dataReader.GetString(1).ToString();
@@ -77,6 +79,13 @@ namespace PortfolioManagement
             }
             if (dataReader.Read()) return dataReader;
             return null;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form buy = new Buy(userId);
+            this.Close();
+            buy.Show();
         }
     }
 }

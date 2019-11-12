@@ -39,6 +39,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -47,6 +48,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.l_money);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.l_uid);
@@ -57,7 +59,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(36, 82);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(261, 319);
+            this.panel1.Size = new System.Drawing.Size(261, 330);
             this.panel1.TabIndex = 3;
             // 
             // l_money
@@ -121,7 +123,7 @@
             // 
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(85, 121);
+            this.username.Location = new System.Drawing.Point(85, 124);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(110, 25);
             this.username.TabIndex = 5;
@@ -131,7 +133,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.ImageLocation = "C:\\Users\\Sangram\\source\\repos\\PortfolioManagement\\img\\1.png";
-            this.pictureBox1.Location = new System.Drawing.Point(73, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(73, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,6 +162,21 @@
             this.dataGridView1.Size = new System.Drawing.Size(429, 319);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(73, 282);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 34);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Buy New Stock";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Stockwindow
             // 
@@ -195,5 +212,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
     }
 }
