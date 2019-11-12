@@ -27,8 +27,6 @@ C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.
 C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.csproj.GenerateResource.cache
 C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.exe
 C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.pdb
-C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\Database.mdf
-C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\Database_log.ldf
 C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\PortfolioManagement.exe.config
 C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\PortfolioManagement.exe
 C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\PortfolioManagement.pdb
@@ -56,3 +54,9 @@ C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\bin\Debug\BouncyCastle.C
 C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\bin\Debug\Renci.SshNet.dll
 C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\bin\Debug\MySql.Data.xml
 C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\obj\Debug\PortfolioManagement.csproj.CopyComplete
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\MySql.Data.dll
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\Google.Protobuf.dll
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\Renci.SshNet.dll
+C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\MySql.Data.xml
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.csproj.CopyComplete
