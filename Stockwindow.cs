@@ -87,5 +87,17 @@ namespace PortfolioManagement
             this.Close();
             buy.Show();
         }
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox1.Text = dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells["transcation_id"].Value.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int t_id = int.Parse(textBox1.Text);
+            Form sell = new Sell(userId,t_id);
+            this.Close();
+            sell.Show();
+        }
     }
 }
