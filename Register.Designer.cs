@@ -38,6 +38,7 @@
             this.alertMsg = new System.Windows.Forms.Label();
             this.pwdStatus = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.cancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -91,18 +92,20 @@
             // 
             // addBtn
             // 
-            this.addBtn.Location = new System.Drawing.Point(251, 221);
+            this.addBtn.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addBtn.Location = new System.Drawing.Point(235, 236);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(98, 35);
             this.addBtn.TabIndex = 6;
             this.addBtn.Text = "Register";
-            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.UseVisualStyleBackColor = false;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // alertMsg
             // 
             this.alertMsg.AutoSize = true;
-            this.alertMsg.Location = new System.Drawing.Point(201, 166);
+            this.alertMsg.Location = new System.Drawing.Point(280, 200);
             this.alertMsg.Name = "alertMsg";
             this.alertMsg.Size = new System.Drawing.Size(0, 13);
             this.alertMsg.TabIndex = 7;
@@ -119,22 +122,34 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.BackColor = System.Drawing.Color.Ivory;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label4.Location = new System.Drawing.Point(148, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(301, 35);
+            this.label4.Size = new System.Drawing.Size(299, 33);
             this.label4.TabIndex = 13;
             this.label4.Text = "Create New Account";
+            // 
+            // cancel
+            // 
+            this.cancel.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancel.Location = new System.Drawing.Point(473, 236);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(83, 35);
+            this.cancel.TabIndex = 14;
+            this.cancel.Text = "Cancel";
+            this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GreenYellow;
+            this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(596, 297);
+            this.Controls.Add(this.cancel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pwdStatus);
             this.Controls.Add(this.alertMsg);
@@ -164,5 +179,6 @@
         private System.Windows.Forms.Label alertMsg;
         private System.Windows.Forms.Label pwdStatus;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button cancel;
     }
 }

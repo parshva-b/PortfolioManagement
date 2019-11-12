@@ -38,9 +38,8 @@
             this.register = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.alertMsg = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +51,7 @@
             this.groupBox1.Controls.Add(this.email);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Location = new System.Drawing.Point(217, 92);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(374, 186);
@@ -72,12 +72,14 @@
             // 
             // login
             // 
+            this.login.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login.Location = new System.Drawing.Point(151, 139);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(75, 23);
             this.login.TabIndex = 4;
             this.login.Text = "Login";
-            this.login.UseVisualStyleBackColor = true;
+            this.login.UseVisualStyleBackColor = false;
             this.login.Click += new System.EventHandler(this.login_Click);
             // 
             // pwd
@@ -114,18 +116,20 @@
             // 
             // register
             // 
-            this.register.Location = new System.Drawing.Point(363, 376);
+            this.register.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.register.Location = new System.Drawing.Point(238, 362);
             this.register.Name = "register";
             this.register.Size = new System.Drawing.Size(75, 23);
             this.register.TabIndex = 1;
             this.register.Text = "Register";
-            this.register.UseVisualStyleBackColor = true;
+            this.register.UseVisualStyleBackColor = false;
             this.register.Click += new System.EventHandler(this.register_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(318, 360);
+            this.label3.Location = new System.Drawing.Point(193, 346);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(163, 13);
             this.label3.TabIndex = 2;
@@ -140,45 +144,38 @@
             this.alertMsg.TabIndex = 3;
             this.alertMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(62, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Show";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(62, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.BackColor = System.Drawing.Color.Ivory;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label4.Location = new System.Drawing.Point(321, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(169, 35);
+            this.label4.Size = new System.Drawing.Size(167, 33);
             this.label4.TabIndex = 13;
             this.label4.Text = "Login Here";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(492, 362);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Forgot Password";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // LandingPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GreenYellow;
+            this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.alertMsg);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.register);
@@ -204,9 +201,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox showHide;
         private System.Windows.Forms.Label alertMsg;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }
 

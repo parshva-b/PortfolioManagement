@@ -12,13 +12,13 @@ namespace PortfolioManagement
 {
     public partial class Sell : Form
     {
-        int user_id;
-        int t_id;
-        public Sell(int user_id, int t_id)
+        static int user_id;
+        static int t_id;
+        public Sell(int user_id1, int t_id1)
         {
             InitializeComponent();
-            this.user_id = user_id;
-            this.t_id = t_id;
+            user_id = user_id1;
+            t_id = t_id1;
         }
 
         private void Sell_Load(object sender, EventArgs e)
@@ -63,6 +63,12 @@ namespace PortfolioManagement
             int rowsaffected = database.updateUser(user_id,balance+Convert.ToDouble(sp.Text));
             int x = database.updateTransaction(t_id, Convert.ToInt32(quantity.Text) - Convert.ToInt32(quant.Text));
             MessageBox.Show("The transaction was successful!!!");
+            this.Hide();
+            (new Stockwindow(user_id)).Show();
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
             this.Hide();
             (new Stockwindow(user_id)).Show();
         }

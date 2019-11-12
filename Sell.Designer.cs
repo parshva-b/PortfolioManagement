@@ -51,6 +51,7 @@
             this.quantity = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.cancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -154,12 +155,14 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(165, 131);
+            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(191, 130);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 11;
             this.button2.Text = "Sell";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // sp
@@ -261,33 +264,47 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(359, 120);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 24;
             this.button3.Text = "Analyse";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.BackColor = System.Drawing.Color.Ivory;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label1.Location = new System.Drawing.Point(325, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 35);
+            this.label1.Size = new System.Drawing.Size(171, 33);
             this.label1.TabIndex = 25;
             this.label1.Text = "Sell Stocks";
+            // 
+            // cancel
+            // 
+            this.cancel.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancel.Location = new System.Drawing.Point(659, 382);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(75, 23);
+            this.cancel.TabIndex = 23;
+            this.cancel.Text = "Cancel";
+            this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // Sell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GreenYellow;
+            this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cancel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.quantity);
@@ -331,5 +348,6 @@
         private System.Windows.Forms.Label benefit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button cancel;
     }
 }

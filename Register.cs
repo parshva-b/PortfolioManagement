@@ -25,13 +25,13 @@ namespace PortfolioManagement
         private void addBtn_Click(object sender, EventArgs e)
         {
             string mail = email.Text, password = pwd.Text, conPassword = cPwd.Text;
-            if (!isValidEmail(mail)) setMsg("Email not in proper format", Color.Red);
+            if (!password.Equals(conPassword)) setMsg("Error: Passwords do no match", Color.Red);
             else
             {
-                if (!password.Equals(conPassword)) setMsg("Error: Passwords do no match", Color.Red);
+                if ((mail.Length == 0 || password.Length == 0) && password.Length < 6) setMsg("Error: All fields are required", Color.Red);
                 else
                 {
-                    if ((mail.Length == 0 || password.Length == 0) && password.Length < 6) setMsg("Error: All fields are required", Color.Red);
+                    if (!isValidEmail(mail)) setMsg("Email not in proper format", Color.Red);
                     else
                     {
                         bool checkForMail = database.checkEmailExists(mail);
@@ -83,6 +83,12 @@ namespace PortfolioManagement
                 return true;
             }
             catch (FormatException) { return false; }
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            (new LandingPage()).Show();
         }
     }
 }

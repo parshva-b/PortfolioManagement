@@ -14,7 +14,7 @@ namespace PortfolioManagement
 {
     public partial class Stockwindow : Form
     {
-        public int userId;
+        public static int userId;
         public Stockwindow(int uid)
         {
             InitializeComponent();
@@ -23,7 +23,6 @@ namespace PortfolioManagement
             MySqlDataReader dataReader = GetUserInfo(uid.ToString());
             //MessageBox.Show(x.ToString());
             l_email.Text = dataReader.GetString(1).ToString();
-            l_uid.Text = dataReader.GetString(0).ToString();
             l_money.Text = dataReader.GetString(3).ToString();
 
             GetStockInfo(uid.ToString());
@@ -33,7 +32,7 @@ namespace PortfolioManagement
         {
             MySqlConnection connection = database.Connection();
             MySqlCommand query = connection.CreateCommand();
-            query.CommandText = "SELECT * from `stocks` where user_id = @uid";
+            query.CommandText = "SELECT `transcation_id`, `stock_symbol`, `count`, `purchasePrice` from `stocks` where user_id = @uid";
             query.Parameters.AddWithValue("@uid", id);
             MySqlDataReader dataReader = null;
             DataTable dtemp = new DataTable();
@@ -54,7 +53,8 @@ namespace PortfolioManagement
 
         private void Stockwindow_Load(object sender, EventArgs e)
         {
-
+            try { pictureBox1.Load(@"C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\img\avatar.png"); }
+            catch (Exception ee) { Debug.WriteLine(ee.Message); }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -87,16 +87,14 @@ namespace PortfolioManagement
             this.Close();
             buy.Show();
         }
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            textBox1.Text = dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells["transcation_id"].Value.ToString();
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int t_id = int.Parse(textBox1.Text);
-            Form sell = new Sell(userId,t_id);
-            this.Close();
+            int index = dataGridView1.CurrentCell.RowIndex;
+            index = int.Parse(dataGridView1.Rows[index].Cells[0].Value.ToString());
+            int t_id = index;
+            Form sell = new Sell(userId, t_id);
+            this.Hide();
             sell.Show();
         }
     }

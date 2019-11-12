@@ -67,3 +67,5 @@ C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.
 C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.Buy.resources
 C:\Users\shivam_1708\Desktop\Github\PortfolioManagement\obj\Debug\PortfolioManagement.Sell.resources
 C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.Sell.resources
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.Buy.resources
+C:\Users\User\Desktop\Parshva\Code Skills\C#\PortfolioManagement\obj\Debug\PortfolioManagement.Sell.resources

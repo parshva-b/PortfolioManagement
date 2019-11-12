@@ -12,7 +12,7 @@ namespace PortfolioManagement
 {
     public partial class Buy : Form
     {
-        int user_id;
+        static int user_id;
         double balance;
         public Buy(int id)
         {
@@ -74,6 +74,12 @@ namespace PortfolioManagement
         private void currentBalance_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            (new Stockwindow(user_id)).Show();
         }
     }
 }
