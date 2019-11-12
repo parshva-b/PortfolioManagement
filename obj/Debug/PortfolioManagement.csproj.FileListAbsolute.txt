@@ -64,3 +64,4 @@ C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\Renci.SshNet.dll
 C:\Users\Sangram\source\repos\PortfolioManagement\bin\Debug\MySql.Data.xml
 C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.csproj.CopyComplete
 >>>>>>> 09491fc4b3367cc7e8226889ae3eac1ee1b8bad7
+C:\Users\Sangram\source\repos\PortfolioManagement\obj\Debug\PortfolioManagement.Buy.resources

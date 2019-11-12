@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.l_money = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.l_uid = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.l_email = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.l_money = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -59,6 +59,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 319);
             this.panel1.TabIndex = 3;
+            // 
+            // l_money
+            // 
+            this.l_money.AutoSize = true;
+            this.l_money.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_money.Location = new System.Drawing.Point(98, 249);
+            this.l_money.Name = "l_money";
+            this.l_money.Size = new System.Drawing.Size(0, 18);
+            this.l_money.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(26, 249);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(74, 18);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Amount  :";
             // 
             // l_uid
             // 
@@ -118,25 +137,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // l_money
-            // 
-            this.l_money.AutoSize = true;
-            this.l_money.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_money.Location = new System.Drawing.Point(98, 249);
-            this.l_money.Name = "l_money";
-            this.l_money.Size = new System.Drawing.Size(0, 18);
-            this.l_money.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(26, 249);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 18);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Amount  :";
             // 
             // label2
             // 

@@ -18,6 +18,6 @@ namespace PortfolioManagement
         {
             InitializeComponent();
         }
-       
+
     }
 }
