@@ -1,9 +1,7 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PortfolioManagement
 {
-    public partial class Stockwindow : Form
+    public partial class Sell : Form
     {
-        public Stockwindow(int uid)
+        public Sell()
         {
             InitializeComponent();
         }
 
-        private void Stockwindow_Load(object sender, EventArgs e)
+        private void Sell_Load(object sender, EventArgs e)
         {
 
         }
