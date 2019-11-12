@@ -56,6 +56,67 @@ namespace PortfolioManagement
             return null;
         }
 
+        public static string getpurchasePrice(int t_id)
+        {
+            MySqlConnection connection = Connection();
+            MySqlCommand query = connection.CreateCommand();
+            query.CommandText = "SELECT `purchasePrice` from `stocks` where transcation_id = @id";
+            query.Parameters.AddWithValue("@id", t_id);
+            MySqlDataReader dataReader = null;
+            try
+            {
+                connection.Open();
+                dataReader = query.ExecuteReader();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Exception: " + e.Message);
+            }
+            if (dataReader.Read()) return dataReader.GetString(0);
+            return null;
+        }
+
+        public static string getpurchaseCount(int t_id)
+        {
+            MySqlConnection connection = Connection();
+            MySqlCommand query = connection.CreateCommand();
+            query.CommandText = "SELECT `count` from `stocks` where transcation_id = @id";
+            query.Parameters.AddWithValue("@id", t_id);
+            MySqlDataReader dataReader = null;
+            try
+            {
+                connection.Open();
+                dataReader = query.ExecuteReader();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Exception: " + e.Message);
+            }
+            if (dataReader.Read()) return dataReader.GetString(0);
+            return null;
+        }
+
+        public static string getStockSymbol(int t_id)
+        {
+            MySqlConnection connection = Connection();
+            MySqlCommand query = connection.CreateCommand();
+            query.CommandText = "SELECT `stock_symbol` from `stocks` where transcation_id = @id";
+            query.Parameters.AddWithValue("@id", t_id);
+            Debug.WriteLine(t_id);
+            MySqlDataReader dataReader = null;
+            try
+            {
+                connection.Open();
+                dataReader = query.ExecuteReader();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Exception: " + e.Message);
+            }
+            if (dataReader.Read()) return dataReader.GetString(0);
+            return null;
+        }
+
         public static int getUid(string email)
         {
             MySqlConnection connection = Connection();
@@ -156,5 +217,25 @@ namespace PortfolioManagement
             }
             return rowsAffected;
         }
+        public static int updateTransaction(int id, int count)
+        {
+            MySqlConnection connection = Connection();
+            MySqlCommand query = connection.CreateCommand();
+            query.CommandText = "UPDATE `stocks` SET `count`= @count WHERE `transcation_id`=@id";
+            query.Parameters.AddWithValue("@id", id);
+            query.Parameters.AddWithValue("@count", count);
+            int rowsAffected = 0;
+            try
+            {
+                connection.Open();
+                rowsAffected = query.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Exception: " + e.Message);
+            }
+            return rowsAffected;
+        }
     }
 }
+

@@ -16,7 +16,7 @@ namespace PortfolioManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LandingPage());
+            Application.Run(new Sell(1,3));
         }
     }
 }

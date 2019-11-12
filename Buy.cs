@@ -59,12 +59,13 @@ namespace PortfolioManagement
             }
             else
             {
-                int rowsAffected = database.addTransaction(user_id,textBox1.Text,(int)numericUpDown1.Value,Convert.ToDouble(total.Text));
+                int rowsAffected = database.addTransaction(user_id,textBox1.Text,(int)numericUpDown1.Value,Convert.ToDouble(currentPrice.Text));
                 int x = database.updateUser(user_id, balance - Convert.ToDouble(total.Text));
                 getBalance();
                 if (rowsAffected != 0 && x!=0)
                 {
                     MessageBox.Show("Congratulations, the transaction was successful!!!");
+                    this.Hide();
                     (new Stockwindow(user_id)).Show();
                 }
             }
