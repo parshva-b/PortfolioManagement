@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.benefit = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.quant = new System.Windows.Forms.Label();
+            this.cp = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.purchasePrice = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.sp = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -38,19 +46,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.symbol = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.symbolName = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.quantity = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.cp = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.purchasePrice = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.quant = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.benefit = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -78,6 +78,79 @@
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Transaction";
+            // 
+            // benefit
+            // 
+            this.benefit.AutoSize = true;
+            this.benefit.Location = new System.Drawing.Point(447, 97);
+            this.benefit.Name = "benefit";
+            this.benefit.Size = new System.Drawing.Size(22, 13);
+            this.benefit.TabIndex = 22;
+            this.benefit.Text = "0.0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(373, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Benefit";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // quant
+            // 
+            this.quant.AutoSize = true;
+            this.quant.Location = new System.Drawing.Point(317, 66);
+            this.quant.Name = "quant";
+            this.quant.Size = new System.Drawing.Size(13, 13);
+            this.quant.TabIndex = 20;
+            this.quant.Text = "0";
+            // 
+            // cp
+            // 
+            this.cp.AutoSize = true;
+            this.cp.Location = new System.Drawing.Point(317, 97);
+            this.cp.Name = "cp";
+            this.cp.Size = new System.Drawing.Size(22, 13);
+            this.cp.TabIndex = 19;
+            this.cp.Text = "0.0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(238, 97);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Cost Price:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(229, 66);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 13);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Quantity:";
+            // 
+            // purchasePrice
+            // 
+            this.purchasePrice.AutoSize = true;
+            this.purchasePrice.Location = new System.Drawing.Point(317, 37);
+            this.purchasePrice.Name = "purchasePrice";
+            this.purchasePrice.Size = new System.Drawing.Size(22, 13);
+            this.purchasePrice.TabIndex = 15;
+            this.purchasePrice.Text = "0.0";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(217, 37);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 13);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "Purchase Price:";
             // 
             // button2
             // 
@@ -159,15 +232,6 @@
             this.symbol.TabIndex = 14;
             this.symbol.Text = "Symbol:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(365, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Sell Stocks";
-            // 
             // symbolName
             // 
             this.symbolName.AutoSize = true;
@@ -205,84 +269,26 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // cp
+            // label1
             // 
-            this.cp.AutoSize = true;
-            this.cp.Location = new System.Drawing.Point(317, 97);
-            this.cp.Name = "cp";
-            this.cp.Size = new System.Drawing.Size(22, 13);
-            this.cp.TabIndex = 19;
-            this.cp.Text = "0.0";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(238, 97);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Cost Price:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(229, 66);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 13);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Quantity:";
-            // 
-            // purchasePrice
-            // 
-            this.purchasePrice.AutoSize = true;
-            this.purchasePrice.Location = new System.Drawing.Point(317, 37);
-            this.purchasePrice.Name = "purchasePrice";
-            this.purchasePrice.Size = new System.Drawing.Size(22, 13);
-            this.purchasePrice.TabIndex = 15;
-            this.purchasePrice.Text = "0.0";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(217, 37);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 13);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "Purchase Price:";
-            // 
-            // quant
-            // 
-            this.quant.AutoSize = true;
-            this.quant.Location = new System.Drawing.Point(317, 66);
-            this.quant.Name = "quant";
-            this.quant.Size = new System.Drawing.Size(13, 13);
-            this.quant.TabIndex = 20;
-            this.quant.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(373, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Benefit";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // benefit
-            // 
-            this.benefit.AutoSize = true;
-            this.benefit.Location = new System.Drawing.Point(447, 97);
-            this.benefit.Name = "benefit";
-            this.benefit.Size = new System.Drawing.Size(22, 13);
-            this.benefit.TabIndex = 22;
-            this.benefit.Text = "0.0";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.label1.Location = new System.Drawing.Point(325, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 35);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Sell Stocks";
             // 
             // Sell
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.GreenYellow;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.quantity);
             this.Controls.Add(this.label4);
@@ -290,7 +296,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.symbol);
-            this.Controls.Add(this.label1);
             this.Name = "Sell";
             this.Text = "Sell";
             this.Load += new System.EventHandler(this.Sell_Load);
@@ -313,7 +318,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label symbol;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label symbolName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label quantity;
@@ -326,5 +330,6 @@
         private System.Windows.Forms.Label quant;
         private System.Windows.Forms.Label benefit;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
